@@ -434,8 +434,8 @@ export default function behavesLikeSqlFormatter(language) {
     });
 
     it("formats postgres specific operators", function() {
-        expect(format("column::int")).toBe("column :: int");
-        expect(format("v->2")).toBe("v -> 2");
-        expect(format("v->>2")).toBe( "v ->> 2");
+        expect(format("column :: int")).toBe("column::int");
+        expect(format("v -> 2")).toBe("v->2");
+        expect(format("v ->> 2")).toBe("v->>2");
     });
 }
